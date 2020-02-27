@@ -23,26 +23,31 @@ public class DecoratorStream : Stream
 	{
 		this.stream = stream;
 		this.prefix = prefix;
+		if ( !String.IsNullOrEmpty(prefix) && stream.CanWrite)
+		{
+			byte[] bytes = System.Text.Encoding.UTF8.GetBytes(this.prefix);
+			this.Write(bytes, 0, bytes.Length);
+		}
 	}
 
 	public override void SetLength(long length)
 	{
-		throw new NotSupportedException();
+		stream.SetLength(length);
 	}
 
 	public override void Write(byte[] bytes, int offset, int count)
 	{
-		throw new NotImplementedException();
+		stream.Write(bytes, offset, count);
 	}
 
 	public override int Read(byte[] bytes, int offset, int count)
 	{
-		throw new NotSupportedException();
+		return stream.Read(bytes, offset, count);
 	}
 
 	public override long Seek(long offset, SeekOrigin origin)
 	{
-		throw new NotSupportedException();
+		return stream.Seek(offset, origin);
 	}
 
 	public override void Flush()
@@ -50,7 +55,7 @@ public class DecoratorStream : Stream
 		stream.Flush();
 	}
 
-	public static void Main(string[] args)
+	public static void Check()
 	{
 		byte[] message = new byte[] { 0x48, 0x65, 0x6c, 0x6c, 0x6f, 0x2c, 0x20, 0x77, 0x6f, 0x72, 0x6c, 0x64, 0x21 };
 		using (MemoryStream stream = new MemoryStream())

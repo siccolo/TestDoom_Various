@@ -7,7 +7,9 @@ namespace Delete_TestDome1
         public static void Main(string[] args)
         {
             //Song.Check();
-            SortedSearch.Check();
+            //SortedSearch.Check();
+            //DecoratorStream.Check();
+            TrainComposition.Check();
             return;
             /*
             string[] names1 = new string[] { "Ava", "Emma", "Olivia" };
