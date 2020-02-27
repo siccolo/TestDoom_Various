@@ -62,7 +62,7 @@ public class Tester
     public void DepositWorks()
     {
         Account account = new Account(20);
-        var r = account.Deposit(10)
+        var r = account.Deposit(10);
         Assert.AreEqual(10, account.Balance, epsilon);
         Assert.IsTrue(r);
     }
@@ -70,7 +70,7 @@ public class Tester
     public void WithdrawWorks()
     {
         Account account = new Account(20);
-        account.Deposit(10)
+        account.Deposit(10);
         var r = account.Withdraw(5);
         Assert.AreEqual(5, account.Balance, epsilon);
         Assert.IsTrue(r);

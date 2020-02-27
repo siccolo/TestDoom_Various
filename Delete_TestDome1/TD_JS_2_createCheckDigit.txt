@@ -1,0 +1,13 @@
+function createCheckDigit(membershipId) {
+  // Write the code that goes here.
+  
+  var checkdigit=0;
+  membershipId.split("").forEach(function(c){ checkdigit = checkdigit + parseInt(c);console.log(checkdigit + " " + c);});
+  if ( checkdigit>9){
+    return createCheckDigit (checkdigit.toString());
+  }
+  
+  return checkdigit;
+}
+
+console.log(createCheckDigit("55555"));
