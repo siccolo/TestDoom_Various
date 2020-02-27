@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delete_TestDome1", "Delete_TestDome1\Delete_TestDome1.csproj", "{9C76D816-BE75-45DE-9961-2837FB29A8D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTest1", "NUnitTest1\NUnitTest1.csproj", "{6921F0B9-E7A1-4642-9F47-2EFB639AC9B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|anycpu = Debug|anycpu
+		Release|anycpu = Release|anycpu
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C76D816-BE75-45DE-9961-2837FB29A8D8}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{9C76D816-BE75-45DE-9961-2837FB29A8D8}.Debug|anycpu.Build.0 = Debug|anycpu
+		{9C76D816-BE75-45DE-9961-2837FB29A8D8}.Release|anycpu.ActiveCfg = Release|anycpu
+		{9C76D816-BE75-45DE-9961-2837FB29A8D8}.Release|anycpu.Build.0 = Release|anycpu
+		{6921F0B9-E7A1-4642-9F47-2EFB639AC9B7}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{6921F0B9-E7A1-4642-9F47-2EFB639AC9B7}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{6921F0B9-E7A1-4642-9F47-2EFB639AC9B7}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{6921F0B9-E7A1-4642-9F47-2EFB639AC9B7}.Release|anycpu.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
